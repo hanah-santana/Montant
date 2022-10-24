@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2805616529003D4900B0B382 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2805616429003D4900B0B382 /* ExpensesViewController.swift */; };
+		2805616729003FAC00B0B382 /* ExpensesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2805616629003FAC00B0B382 /* ExpensesModel.swift */; };
 		286379BE28F85F0700B915AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286379BD28F85F0700B915AE /* AppDelegate.swift */; };
 		286379C028F85F0700B915AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286379BF28F85F0700B915AE /* SceneDelegate.swift */; };
 		286379C228F85F0700B915AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286379C128F85F0700B915AE /* ViewController.swift */; };
@@ -16,6 +18,9 @@
 		286379D828F85F0800B915AE /* MontantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286379D728F85F0800B915AE /* MontantTests.swift */; };
 		286379E228F85F0800B915AE /* MontantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286379E128F85F0800B915AE /* MontantUITests.swift */; };
 		286379E428F85F0800B915AE /* MontantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286379E328F85F0800B915AE /* MontantUITestsLaunchTests.swift */; };
+		2899E4A028FED68C007F9026 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899E49F28FED68C007F9026 /* ArticlesViewController.swift */; };
+		28A4130028F9A8FD000EABB4 /* LatestPostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A412FF28F9A8FD000EABB4 /* LatestPostsModel.swift */; };
+		28A4130228F9A986000EABB4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A4130128F9A986000EABB4 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2805616429003D4900B0B382 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
+		2805616629003FAC00B0B382 /* ExpensesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesModel.swift; sourceTree = "<group>"; };
 		286379BA28F85F0700B915AE /* Montant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Montant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286379BD28F85F0700B915AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286379BF28F85F0700B915AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		286379DD28F85F0800B915AE /* MontantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MontantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		286379E128F85F0800B915AE /* MontantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontantUITests.swift; sourceTree = "<group>"; };
 		286379E328F85F0800B915AE /* MontantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2899E49F28FED68C007F9026 /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		28A412FF28F9A8FD000EABB4 /* LatestPostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPostsModel.swift; sourceTree = "<group>"; };
+		28A4130128F9A986000EABB4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2805616329002AE000B0B382 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				28A4130128F9A986000EABB4 /* API.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		286379B128F85F0700B915AE = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +117,12 @@
 		286379BC28F85F0700B915AE /* Montant */ = {
 			isa = PBXGroup;
 			children = (
+				2805616329002AE000B0B382 /* Services */,
 				28A412FA28F98F3B000EABB4 /* Model */,
-				28A412FB28F98F57000EABB4 /* View */,
 				28A412FC28F98F76000EABB4 /* Controller */,
+				28A412FB28F98F57000EABB4 /* Views */,
 				286379BD28F85F0700B915AE /* AppDelegate.swift */,
 				286379BF28F85F0700B915AE /* SceneDelegate.swift */,
-				286379C128F85F0700B915AE /* ViewController.swift */,
 				286379C928F85F0700B915AE /* Assets.xcassets */,
 				286379CB28F85F0800B915AE /* LaunchScreen.storyboard */,
 				286379CE28F85F0800B915AE /* Info.plist */,
@@ -133,15 +151,20 @@
 		28A412FA28F98F3B000EABB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				28A412FF28F9A8FD000EABB4 /* LatestPostsModel.swift */,
+				2805616629003FAC00B0B382 /* ExpensesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		28A412FB28F98F57000EABB4 /* View */ = {
+		28A412FB28F98F57000EABB4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2899E49F28FED68C007F9026 /* ArticlesViewController.swift */,
+				2805616429003D4900B0B382 /* ExpensesViewController.swift */,
+				286379C128F85F0700B915AE /* ViewController.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		28A412FC28F98F76000EABB4 /* Controller */ = {
@@ -280,6 +303,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		286379F028F85F2300B915AE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -303,8 +327,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				286379C228F85F0700B915AE /* ViewController.swift in Sources */,
+				28A4130028F9A8FD000EABB4 /* LatestPostsModel.swift in Sources */,
 				286379C828F85F0700B915AE /* Montant.xcdatamodeld in Sources */,
 				286379BE28F85F0700B915AE /* AppDelegate.swift in Sources */,
+				28A4130228F9A986000EABB4 /* API.swift in Sources */,
+				2899E4A028FED68C007F9026 /* ArticlesViewController.swift in Sources */,
+				2805616529003D4900B0B382 /* ExpensesViewController.swift in Sources */,
+				2805616729003FAC00B0B382 /* ExpensesModel.swift in Sources */,
 				286379C028F85F0700B915AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
